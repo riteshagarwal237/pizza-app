@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/adminLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Welcome Admin..!"
+            android:textColor="@color/lightblue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/adminAddpizzaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AddPizza" />
+
+        <Button
+            android:id="@+id/adminAddToppingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Toppings" />
+
+        <Button
+            android:id="@+id/adminAddLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Location" />
+
+        <Button
+            android:id="@+id/ViewOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View PizzaOrder" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registrationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text=" Registration"
+            android:textColor="@color/vine_green"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/signup__emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/CreamColor"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="10dp"
+            android:hint=" Email "
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/signup_passwordeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/CreamColor"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint=" Password "
+            android:padding="10dp"
+            android:password="true"
+            android:text="" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/signup_confirmpasswordeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/CreamColor"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint=" Confirm Password "
+            android:padding="10dp"
+            android:password="true"
+            android:text="abc" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/signup_addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="5dp"
+            android:background="@color/CreamColor"
+            android:drawablePadding="10dp"
+            android:hint="Address"
+            android:padding="10dp"
+            android:text="" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" >
+
+            <Button
+                android:id="@+id/signup_registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/vine_green" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
